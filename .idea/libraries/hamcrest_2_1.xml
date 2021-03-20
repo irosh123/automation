@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="hamcrest-2.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/hamcrest-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/jaxb-impl-2.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/jakarta.activation-api-1.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/httpclient-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/httpcore-4.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/groovy-json-3.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/jakarta.xml.bind-api-2.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/groovy-xml-3.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/commons-lang3-3.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/groovy-3.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/commons-codec-1.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/httpmime-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/deps/tagsoup-1.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/docs/rest-assured-4.3.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/docs/json-path-4.3.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/docs/rest-assured-common-4.3.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/docs/xml-path-4.3.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/docs/rest-assured-4.3.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/docs/json-path-4.3.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/docs/rest-assured-common-4.3.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../RestAssured Files/REST/docs/xml-path-4.3.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

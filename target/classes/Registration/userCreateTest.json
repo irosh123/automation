@@ -1,0 +1,23 @@
+{
+
+  "createUser": {
+    "email": "irosh+603@intervest.lk",
+    "lastName": "Wijesekera",
+    "firstName": "Irosh",
+    "deviceCode": "1234567890",
+    "appVersion": "1",
+    "phone": "123456789",
+    "countryCode": "+94",
+    "loginPassword": "January*27",
+    "dob": "1991-01-25",
+    "baseUrl": "https://coreqa01.wapp.com/core",
+    "localTime": "2021-03-17 17:09:02",
+    "GMTTime": "2021-03-17 17:09:02",
+    "appRequestedTime": "2021-03-17 17:09:02",
+    "agentId": 1,
+    "agentName": "Test Agent",
+    "channel": "APP"
+
+  }
+
+}
