@@ -7,6 +7,7 @@ import io.restassured.response.Response;
 
 import static org.hamcrest.Matchers.is;
 
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
@@ -19,7 +20,7 @@ import java.util.*;
 
 public class UserCreate_POST_Request {
 
-    public static String jsonAsString;
+
 
     @Test
     public void createUser() throws Exception {
@@ -39,6 +40,9 @@ public class UserCreate_POST_Request {
 
 
         String firstName = JsonPath.from(response.getBody().asString()).get("result.person.firstName").toString();
+        String personReference = JsonPath.from(response.getBody().asString()).get("result.person.personReference").toString();
+        helper.writeToJsonFile(personReference);
+
         assertThat((new Object[]{testData.get("firstName")}), is  (new Object[]{firstName}));
 
 

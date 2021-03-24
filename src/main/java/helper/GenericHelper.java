@@ -3,6 +3,7 @@ package helper;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import org.json.simple.JSONObject;
 
 import java.io.*;
 import java.util.HashMap;
@@ -46,6 +47,26 @@ public class GenericHelper {
 
 
 
+    }
+
+    public void writeToJsonFile(String test){
+
+        //Creating a JSONObject object
+        JSONObject jsonObject = new JSONObject();
+        String jsonFilePath  = System.getProperty("user.dir")+ File.separator+"src"+ File.separator+"main"+ File.separator+"resources"+ File.separator+"Registration"+ File.separator+"verificationEmailTest.json";
+        //Inserting key-value pairs into the json object
+        jsonObject.put("personReference", test);
+
+
+        try {
+            FileWriter file = new FileWriter(jsonFilePath);
+            file.write(jsonObject.toJSONString());
+            file.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        System.out.println("JSON file created: "+jsonObject);
     }
 
 
