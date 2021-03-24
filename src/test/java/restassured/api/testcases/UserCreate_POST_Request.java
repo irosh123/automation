@@ -32,6 +32,7 @@ public class UserCreate_POST_Request {
         UserCreateHelper user = new UserCreateHelper(baseUrl);
 
         Map<String,String> testData;
+        Map<String,String> testData1;
         testData= helper.readJsonFile("createUser","userCreateTest.json","Registration");
 
         response = user.createUserDetails(testData);
@@ -41,7 +42,9 @@ public class UserCreate_POST_Request {
 
         String firstName = JsonPath.from(response.getBody().asString()).get("result.person.firstName").toString();
         String personReference = JsonPath.from(response.getBody().asString()).get("result.person.personReference").toString();
-        helper.writeToJsonFile(personReference);
+
+        helper.writeToJsonFile(personReference,baseUrl);
+        //testData1= helper.readJsonFile("createUser","verificationEmailTest.json","Registration");
 
         assertThat((new Object[]{testData.get("firstName")}), is  (new Object[]{firstName}));
 
