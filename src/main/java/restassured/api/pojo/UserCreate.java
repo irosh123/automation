@@ -155,7 +155,7 @@ public class UserCreate<baseUrl> {
         userCreatePojo.setCountryCode(testData.get("countryCode"));
         userCreatePojo.setLoginPassword(testData.get("loginPassword"));
         userCreatePojo.setDob(testData.get("dob"));
-        userCreatePojo.setBaseUrl(this.url.getBaseUrl(baseUrl));
+        userCreatePojo.setBaseUrl(baseUrl);
         userCreatePojo.setAudit(auditPojo);
 
 

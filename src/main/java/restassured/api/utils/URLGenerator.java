@@ -7,8 +7,10 @@ public class URLGenerator {
 //    userCreateResource = baseURL + userCreateResource;
 //    }
 
-    public String getBaseUrl(String baseURL){
+    public String getUrl(String baseURL){
        return baseURL + userCreateResource;
 
     }
+
+
 }

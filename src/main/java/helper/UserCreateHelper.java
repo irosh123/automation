@@ -1,5 +1,6 @@
 package helper;
 
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import restassured.api.pojo.UserCreate;
 import restassured.api.utils.RestUtils;
@@ -32,9 +33,9 @@ public class UserCreateHelper {
         Response response;
         String body = userCreatePojo.getUsers(testData);
         try{
-            response = utils.createUserPOST(url.getBaseUrl(this.baseUrl),body);
+            response = utils.createUserPOST(url.getUrl(this.baseUrl),body);
             if(response.getStatusCode()!=200){
-                throw new Exception("Failed to Create User using API "+url.getBaseUrl(this.baseUrl)+" and Response body is "+response.getBody().asString());
+                throw new Exception("Failed to Create User using API "+url.getUrl(this.baseUrl)+" and Response body is "+response.getBody().asString());
             }
         }catch (Exception e){
             throw new Exception(e.getMessage());
