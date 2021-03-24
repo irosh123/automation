@@ -1,6 +1,7 @@
 package restassured.api.pojo;
 
 import com.google.gson.Gson;
+import helper.GenerateRandomNumber;
 import helper.GenericHelper;
 import helper.UserCreateHelper;
 import restassured.api.utils.RestUtils;
@@ -21,10 +22,10 @@ public class UserCreate<baseUrl> {
     private String countryCode;
     private String loginPassword;
     private String dob;
-
+    Integer randomNumber;
     private UserCreate_Audit audit;
 
-
+    GenerateRandomNumber generateRand;
     URLGenerator url;
     String baseUrl;
 
@@ -34,7 +35,7 @@ public class UserCreate<baseUrl> {
         url = new URLGenerator();
         Properties property = helper.loadProperty("qa");
         baseUrl = property.getProperty("baseUrl");
-
+        generateRand = new GenerateRandomNumber();
     }
 
 
@@ -146,7 +147,7 @@ public class UserCreate<baseUrl> {
 
         UserCreate userCreatePojo = new UserCreate();
 
-        userCreatePojo.setEmail(testData.get("email"));
+        userCreatePojo.setEmail(testData.get("email")+generateRand.randomNumberGenerate(randomNumber)+"@intervest.lk");
         userCreatePojo.setLastName(testData.get("lastName"));
         userCreatePojo.setFirstName(testData.get("firstName"));
         userCreatePojo.setDeviceCode(testData.get("deviceCode"));

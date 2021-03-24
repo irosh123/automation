@@ -32,9 +32,11 @@ public class UserCreate_POST_Request {
 
         Map<String,String> testData;
         testData= helper.readJsonFile("createUser","userCreateTest.json","Registration");
+
         response = user.createUserDetails(testData);
 
-       // response.prettyPrint();
+        response.prettyPrint();
+
 
         String firstName = JsonPath.from(response.getBody().asString()).get("result.person.firstName").toString();
         assertThat((new Object[]{testData.get("firstName")}), is  (new Object[]{firstName}));
